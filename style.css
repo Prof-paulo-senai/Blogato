@@ -225,3 +225,50 @@ input:focus {
 input::placeholder {
     color: rgba(255, 255, 255, 0.603);
 }
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    main {
+        justify-content: center;
+        width: 100%;
+    }
+
+    main .main-content {
+        width: 100%;
+    }
+
+    .main-content img {
+        width: 100%;
+    }
+
+    main.container {
+        row-gap: 30px;
+    }
+
+    main .side-bar {
+        width: 100%;
+    }
+
+    .side-bar .card-wrapper {
+        width: 100%;
+    }
+
+    .card-wrapper .card {
+        width: calc(50% - 32px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-wrapper .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .card-wrapper .card {
+        align-items: center;
+    }
+}
